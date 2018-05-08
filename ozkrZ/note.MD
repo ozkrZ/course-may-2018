@@ -1,13 +1,9 @@
-Cuando hablamos de controlar la versión de sistemas hay muy pocos que hagan el estupendo trabajo que hace  **GIT** , tanto en rendimiento como en predominio. GIT fue desarrollado por Linus Torvalds en el 2005 y hoy en día, millones de compañías lo usan como un eficiente administrador de código y control de versiones en sus proyectos.
-
-Este software de código abierto se puede descargar tanto para Linux, Windows, Mac y Solaris, y
-
 ## **Comandos básicos de GIT**
 
 - **git config**
 Uno de los comandos más usados en git es git config, que puede ser usado para establecer una configuración específica de usuario, como sería el caso del email, un algoritmo preferido para diff, nombre de usuario y tipo de formato, etc… Por ejemplo, el siguiente comando se usa para establecer un email:
 
-git config --global user.email sam@google.com
+git config --global user.email ejemplo@google.com
 
 - **git init**
 Este comando se usa para crear un nuevo repertorio GIT:
@@ -61,10 +57,8 @@ git remote add origin &lt;93.188.160.58&gt;
 
 - **git branch**
 Este comando se usa para listar, crear o borrar ramas. Para listar todas las ramas se usa:
-- git branch
--
+git branch
 - para borrar la rama:
--
 
 git branch -d &lt;branch-name&gt;
 
