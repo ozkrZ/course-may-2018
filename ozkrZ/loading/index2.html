@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+
+    <div class="w3-container">
+    <h2>Dynamic Progress Bar</h2>
+    <div class="w3-light-grey w3-xxlarge w3-round">
+  <div id="myBar" class="w3-container w3-blue w3-center  w3-round" style="width:1%">0%</div>
+</div>
+<br>
+<button class="w3-button w3-blue" onclick="move();this.disabled='true'">SLOW</button>
+
+<button class="w3-button w3-blue" onclick="moveFast();this.disabled='true'">FAST</button>
+
+<br>
+<br>
+<div class="w3-light-grey w3-xxlarge w3-round">
+<div id="myBar2" class="w3-container w3-blue w3-center  w3-round" style="width:1%"><span id="demo">0</span>%</div>
+</div>
+  <p id="myP"></p>
+<br>
+<button class="w3-button w3-blue" onclick="moveAdvance();this.disabled='true'">LOAD</button>
+</div>
+
+<script src="script2.js"></script>
+  </body>
+</html>

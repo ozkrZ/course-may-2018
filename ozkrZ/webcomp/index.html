@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Componet</title>
+  </head>
+  <body>
+    <hello-component my-name="Juan"></hello-component>
+
+      <script>
+      (function(customElements){
+        'use strict';
+        class HelloComponent extends HTMLElement{
+          constructor(){
+            super();
+            this.myName;
+            const shadowRoot = this.attachShadow({mode:'open'});
+            shadowRoot.innerHTML =`
+            <style>
+            h1{
+              color: blue;
+              font-size: 40px;
+            }
+            </style>
+            <h1>hola ${this.Myname}</h1>
+            <p>Mi primer componente vanila</p>
+            `;
+
+          }
+
+          get myName(){
+            return this.getAttribute('my-name');
+          }
+
+          changeName(otherName){
+            this.myName = otherName;
+          }
+        }
+        customElements.define('hello-component', HelloComponent);
+      })(window.customElements)
+    </script>
+
+<script>
+
+  const inputName = document.getElementbyID('inputName');
+  const button = document.getElementById('button');
+  const helloComponent = document.querySelector('hello-component');
+ button.addEventListener('click'()=>{
+   const nameValue
+ })
+
+</script>
+
+
+
+
+  </body>
+</html>

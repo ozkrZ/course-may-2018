@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- <script>
+      var foo = "name";
+      const iva = "16%"
+      let block = "car"
+
+      /*for (var i = 0; i < 10; i++) {
+        let i = let i + 10
+        }
+*/
+
+//pueden o no tener nombre los funciones
+//para ser citadas en cualquier parte del codigo
+/*
+var foo = function functionName() {
+
+}
+*/
+
+
+//siempre seran funciones sin nombres y
+//se usan generalmente para cachar eventos especificos
+//estan sujetas al elemnto que las detona
+/*
+let bar = (param1, param2) =>{
+
+}
+*/
+//Uso del for en ecmaScript
+/*
+var myArray = ["perro", "gato", "pajaro"]
+
+for (var i=0; i < myArray; i ++){
+  myArray[i];
+  console.log(myArray[i]);
+}
+*/
+
+var myArray = ["perro", "gato", "pajaro"]
+var myBigArray = ["perro", "gato", "pajaro"]
+var myObj = {name: "oscar", last: "zj"}
+
+
+// for (animal of myArray){
+//   console.log("for of", animal);
+// }
+
+// for (position in myObj){
+//   console.log(position)
+//   console.log(myObj[position])
+// }
+
+myArray.map(function(i)){
+  console.log(i)
+}
+
+fetch('datos.json')
+.then((response) =>response.json())
+.then((response) => console.log(response))
+.catch(err => console.log('Fallaste en la peticion' + err))
+
+function printResponse(datos){
+  console.log(datos)
+}
+
+
+
+    </script> -->
+<article class="name-list">1</article>
+<article class="name-list">2</article>
+<article class="name-list">3</article>
+
+<script src="index.js"></script>
+
+  </body>
+</html>
